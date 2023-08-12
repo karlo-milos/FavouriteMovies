@@ -26,6 +26,10 @@ for(var i=0;i < pics.length; i++){
 
 
 var appearElement = $(".off_screen")[0];
+$(appearElement).fadeOut(1);
+
+
+
 var counter = 0; //koliko je filmova odgledano
 var numOfMovies = titles.length;
 var h1Text = $("h1");
@@ -61,7 +65,7 @@ var scrollAmount;
 $(window).on("scroll", function() {
     scrollAmount = window.scrollY;
     if (scrollAmount > 200) {
-       appearElement.style.visibility="visible";
+      // appearElement.style.visibility="visible";
          $(appearElement).fadeIn();
     } else {
         $(appearElement).fadeOut();
