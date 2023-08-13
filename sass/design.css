@@ -15,6 +15,10 @@
   display: none;
 }
 
+#generatePDFButton {
+  visibility: visible;
+}
+
 #generatePDFButton:active {
   background-color: blue;
 }
@@ -166,6 +170,9 @@ footer {
   }
 }
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  #generatePDFButton {
+    visibility: hidden;
+  }
   .body_color {
     background-color: aliceblue;
     margin-left: 35px;
@@ -213,6 +220,9 @@ footer {
   }
 }
 @media only screen and (max-width: 366px) {
+  #generatePDFButton {
+    visibility: hidden;
+  }
   #naslov {
     font-size: small;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
